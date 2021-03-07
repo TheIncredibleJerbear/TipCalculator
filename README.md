@@ -16,19 +16,19 @@ class ViewController: UIViewController{
     @IBOutlet weak var twentypercentlabel: UILabel!
     @IBAction func calculatebutton(_ sender: Any)
    {
-        //WILLIAM FIGUERO'S CODE REFERENCE
+        //WILLIAM FIGUERO'S CODE REFERENCE//
         if let finalamount = BillAmounttextfeild.text
         {
         let billtotal = Double(finalamount) ?? 0
             print(billtotal)
-        //WILLIAM FIGUERO'S REFERENCE
+        //WILLIAM FIGUERO'S REFERENCE//
             
-            //CALCULATION
+            //CALCULATION//
             let tenpercentcalculation = String(format: "%.2f",billtotal * 0.10)
             let fifteenpercentcalculation = String(format: "%.2f",billtotal * 0.15)
             let twentypercentcalculation = String(format: "%.2f", billtotal * 0.20)
             
-            //DISPLAY
+            //DISPLAY//
             tenpercentlabel.text = "Your 10 Percent tip is $ \(tenpercentcalculation)"
             fifteenpercentlabel.text = "Your 15 Percent tip is $ \(fifteenpercentcalculation)"
             twentypercentlabel.text = "Your 20 Percent tip is $\(twentypercentcalculation)"
