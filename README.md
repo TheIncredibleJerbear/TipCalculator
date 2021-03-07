@@ -1,7 +1,6 @@
 # TipCalculator
 import UIKit
 
-
 class ViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,11 +15,13 @@ class ViewController: UIViewController{
     @IBOutlet weak var twentypercentlabel: UILabel!
     @IBAction func calculatebutton(_ sender: Any)
    {
+        
         //WILLIAM FIGUERO'S CODE REFERENCE//
         if let finalamount = BillAmounttextfeild.text
         {
         let billtotal = Double(finalamount) ?? 0
             print(billtotal)
+        
         //WILLIAM FIGUERO'S REFERENCE//
             
             //CALCULATION//
